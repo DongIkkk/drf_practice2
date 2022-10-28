@@ -414,3 +414,4 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,visualstudiocode,django,python,pycharm
 
 0001_initial.py
+0002_article_likes.py
