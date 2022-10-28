@@ -87,8 +87,8 @@ class LikeView(APIView):
         article = get_object_or_404(Article, id=article_id)
         if request.user in article.likes.all():
             article.likes.remove(request.user)
-            return Response("unfollow 했습니다.", status=status.HTTP_200_OK)
+            return Response("좋아요 했습니다.", status=status.HTTP_200_OK)
         else:
             article.likes.add(request.user)
-            return Response("follow 했습니다.", status=status.HTTP_200_OK)
+            return Response("좋아요 취소 했습니다.", status=status.HTTP_200_OK)
     

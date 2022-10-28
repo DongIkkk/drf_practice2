@@ -415,3 +415,4 @@ $RECYCLE.BIN/
 
 0001_initial.py
 0002_article_likes.py
+0002_user_followings.py
